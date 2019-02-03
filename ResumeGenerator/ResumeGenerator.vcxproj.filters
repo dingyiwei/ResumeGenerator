@@ -36,14 +36,38 @@
     <ClCompile Include="ResumeGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ResumePanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ComponentPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="ResumeGenerator.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="ResumePanel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PropertyPanel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ComponentPanel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="ResumeGenerator.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ResumePanel.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ComponentPanel.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
