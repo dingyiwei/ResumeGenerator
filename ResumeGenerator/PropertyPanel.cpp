@@ -3,12 +3,18 @@
 PropertyPanel::PropertyPanel(QWidget *parent)
 	: QScrollArea(parent)
 {
-	QPalette pal;
-	pal.setColor(QPalette::Background, Qt::green);
-	this->setAutoFillBackground(true);
-	this->setPalette(pal);
+
 }
 
 PropertyPanel::~PropertyPanel()
 {
+	for (auto propertyWidget : properties)
+	{
+		if (propertyWidget != nullptr)
+		{
+			delete propertyWidget;
+			propertyWidget = nullptr;
+		}
+	}
+	properties.clear();
 }

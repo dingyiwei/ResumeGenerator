@@ -10,7 +10,7 @@ ResumeGenerator::ResumeGenerator(QWidget *parent)
 	ui.setupUi(this);
 	ui.centralWidget->setLayout(generalLayout);
 	QPalette pal;
-	pal.setColor(QPalette::Background, Qt::red);
+	pal.setColor(QPalette::Background, QColor(235, 235, 235));
 	this->setAutoFillBackground(true);
 	this->setPalette(pal);
 
