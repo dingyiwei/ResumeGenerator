@@ -51,6 +51,9 @@
     <ClCompile Include="Context.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ComponentWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="ResumeGenerator.h">
@@ -68,15 +71,12 @@
     <QtMoc Include="PropertyWidget.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="ComponentWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="ResumeGenerator.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-    <QtUic Include="ResumePanel.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-    <QtUic Include="ComponentPanel.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>

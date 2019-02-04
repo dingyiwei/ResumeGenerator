@@ -1,15 +1,24 @@
 #include "ResumePanel.h"
+#include <iostream>
 
 ResumePanel::ResumePanel(QWidget *parent)
-	: QWidget(parent)
+	: QScrollArea(parent),
+	resume(new QWidget())
 {
-	ui.setupUi(this);
 	QPalette pal;
 	pal.setColor(QPalette::Background, Qt::blue);
-	this->setAutoFillBackground(true);
-	this->setPalette(pal);
+
+	resume->resize(794, 1123);
+	resume->setAutoFillBackground(true);
+	resume->setPalette(pal);
+	this->setWidget(resume);
 }
 
 ResumePanel::~ResumePanel()
 {
+	if (resume != nullptr)
+	{
+		delete resume;
+		resume = nullptr;
+	}
 }

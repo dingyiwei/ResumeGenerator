@@ -1,6 +1,7 @@
 #pragma once
 
 #include <QtWidgets/QMainWindow>
+#include <qboxlayout.h>
 
 #include "ResumePanel.h"
 #include "PropertyPanel.h"

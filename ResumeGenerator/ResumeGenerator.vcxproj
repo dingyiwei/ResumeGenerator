@@ -114,6 +114,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ComponentPanel.cpp" />
+    <ClCompile Include="ComponentWidget.cpp" />
     <ClCompile Include="Context.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PropertyPanel.cpp" />
@@ -125,9 +126,7 @@
     <QtMoc Include="ResumeGenerator.h" />
   </ItemGroup>
   <ItemGroup>
-    <QtUic Include="ComponentPanel.ui" />
     <QtUic Include="ResumeGenerator.ui" />
-    <QtUic Include="ResumePanel.ui" />
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="ResumeGenerator.qrc" />
@@ -157,6 +156,10 @@
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="ComponentWidget.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtWidgets</IncludePath>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtTest;$(QTDIR)\include\QtWidgets</IncludePath>
+    </QtMoc>
     <ClInclude Include="Context.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,9 +1,8 @@
 #pragma once
 
-#include <QWidget>
-#include "ui_ResumePanel.h"
+#include <qscrollarea.h>
 
-class ResumePanel : public QWidget
+class ResumePanel : public QScrollArea
 {
 	Q_OBJECT
 
@@ -12,5 +11,5 @@ public:
 	~ResumePanel();
 
 private:
-	Ui::ResumePanel ui;
+	QWidget *resume;
 };

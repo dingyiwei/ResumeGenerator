@@ -1,7 +1,9 @@
 #pragma once
 
 #include <QWidget>
-#include "ui_ComponentPanel.h"
+#include <qvector.h>
+
+#include "ComponentWidget.h"
 
 class ComponentPanel : public QWidget
 {
@@ -12,5 +14,5 @@ public:
 	~ComponentPanel();
 
 private:
-	Ui::ComponentPanel ui;
+	QVector<ComponentWidget> components;
 };
