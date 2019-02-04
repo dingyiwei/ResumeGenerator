@@ -1,14 +1,14 @@
 [
   (
-    CellType: Common
-    CellName: None
-    CellSize: 0.3
+    CellType: "Common"
+    CellName: "None"
+    CellSize: "0.3"
     CellBody:
     {
       (
-        CellType: Avatar
-        CellName: Avatar
-        CellSize: 0.3
+        CellType: "Avatar"
+        CellName: "Avatar"
+        CellSize: "0.3"
         CellBody: Image(Avatar)
       )
     }

@@ -1,4 +1,7 @@
 #include "ResumeGenerator.h"
+#include <qfile.h>
+#include <qtextstream.h>
+#include "LexicalAnalyzer.h"
 
 ResumeGenerator::ResumeGenerator(QWidget *parent)
 	: QMainWindow(parent),
@@ -20,6 +23,16 @@ ResumeGenerator::ResumeGenerator(QWidget *parent)
 	generalLayout->setStretchFactor(resumePanel, 2);
 	generalLayout->addWidget(propertyPanel);
 	generalLayout->setStretchFactor(propertyPanel, 1);
+
+	// for test, will be removed
+	QFile filein("template.txt");
+	if (filein.open(QFile::ReadOnly))
+	{
+		QByteArray data = filein.readAll();
+		QString text(data);
+		filein.close();
+		LexicalAnalyzer::analyze(text);
+	}
 }
 
 ResumeGenerator::~ResumeGenerator()
