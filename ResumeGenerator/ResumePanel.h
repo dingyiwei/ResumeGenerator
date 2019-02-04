@@ -1,6 +1,7 @@
 #pragma once
 
 #include <qscrollarea.h>
+#include <qboxlayout.h>
 
 class ResumePanel : public QScrollArea
 {

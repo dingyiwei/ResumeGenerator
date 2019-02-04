@@ -1,5 +1,4 @@
 #include "ResumePanel.h"
-#include <iostream>
 
 ResumePanel::ResumePanel(QWidget *parent)
 	: QScrollArea(parent),
@@ -7,10 +6,10 @@ ResumePanel::ResumePanel(QWidget *parent)
 {
 	QPalette pal;
 	pal.setColor(QPalette::Background, Qt::blue);
-
 	resume->resize(794, 1123);
 	resume->setAutoFillBackground(true);
 	resume->setPalette(pal);
+	this->setAlignment(Qt::AlignHCenter | Qt::AlignVCenter);
 	this->setWidget(resume);
 }
 
